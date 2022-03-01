@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    --first-color: #2DCACF;
+    --second-color: #0F0028;
+    --third-color: #2DCACF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+}
+html{
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f7fdfd;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    min-height: 100vh;
+}
+.navbar{
+    max-width: 88%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    border-bottom: .1rem solid #DCE4FF;
+}
+.navbar .menu a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    color: var(--second-color);
+}
+.navbar .menu a.active{
+    color: var(--first-color);
+    position: relative;
+}
+.navbar .menu a.active::before{
+    content: "";
+    position: absolute;
+    bottom: -.6rem;
+    left: 1.5rem;
+    width: 2rem;
+    border-bottom: var(--first-color) .3rem solid;
+    border-radius: 6rem;
+    box-shadow: 0px 4px 9px rgba(21, 223, 226, 0.29);
+}
+.navbar .nav-btn a{
+    font-size: 1.6rem;
+    display: inline-block;
+}
+.navbar .nav-btn a:last-child{
+    margin-left: 4rem;
+    background-color: var(--first-color);
+    padding: .9rem 1.5rem;
+    border-radius: 4rem;
+    box-shadow: -3px 8px 24px rgba(45, 202, 207, 0.33);
+    color: #fff;
+}
+/* banner style  */
+.banner-section{
+    display: flex;
+    max-width: 88%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.banner-left{
+    flex: 1 1 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    flex: 1 1 50rem;
+}
+.banner-content h1{
+    font-size: 6rem;
+}
+.banner-content h1 span{
+    color: var(--first-color);
+}
+.banner-content p{
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+.banner-content .cta{
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+    box-shadow: 0px 12px 30px rgba(45, 202, 207, 0.33);
+}
+.banner-content a img{
+   margin-left: 1rem;
+}
+.banner-content .community{
+    margin-top: 6rem;
+}
+.community h5{
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+}
+.community img{
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.banner-img{
+    flex: 1 1 50rem;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-right{
+    flex: 1 1 20rem;
+}
+.banner-right .nft-card{
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 43px 90px -16px rgba(44, 181, 185, 0.14);
+}
+.banner-right .nft-card h4{
+    font-size: 2rem;
+}
+.banner-right .nft-card h4 span{
+    color: var(--first-color);
+}
+.banner-right .nft-card .bid{
+    margin: 1.5rem 0;
+    background-color: #E8FFFF;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+.bid-footer{
+    display: flex;
+    align-items: center;
+    margin-top: .8rem;
+}
+.bid-btn{
+    padding: 2rem 0;
+}
+.bid-btn a:last-child{
+    color: var(--first-color);
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+}
+.bid-btn a:first-child{
+    font-size: 1.2rem;
+    background-color: var(--first-color);
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    box-shadow: -3px 8px 24px rgba(45, 202, 207, 0.33);
+}
+.banner-right .nft-card .bid .bid-footer p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.banner-right .nft-card .bid .bid-footer p span{
+    color: var(--first-color);
+    padding-right: .8rem;
+}
+.banner-right .nft-card .bid  p:first-child{
+    font-size: 1.5rem;
+}
+.top-contributor{
+    margin: 4rem 0;
+}
+.top-contributor .contributor-title{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.first-contributor{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.contributor-img{
+    display: flex;
+    align-items: center;
+}
+.contributor-name{
+    margin-left: 1rem;
+}
+.contributor-name h4{
+    font-size: 1.5rem;
+}
+.contributor-name p{
+    font-size: 1rem;
+    color: var(--first-color);
+    padding: .6rem 0;
+}
+.qty{
+    display: flex;
+    gap: 2rem;
+}
+.qty p{
+    font-size: 1.2rem;
+}
+.qty p span{
+    color: var(--first-color);
+    padding-right: .4rem;
+    font-weight: 600;
+}
+.powered{
+    display: flex;
+    justify-content: flex-end;
+}
+.powered p{
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+.powered img{
+    margin: 0 .4rem;
+}
+.menu-icon{
+    display: none;
+}
+.vertical-menu{
+    position: fixed;
+    background-color: #E8FFFF;
+    top: 0;
+    bottom: 0;
+    left: -120%;
+    max-width: 30rem;
+    width: 100%;
+    transition: all .3s linear;
+}
+.vertical-menu.active{
+    left: 0;
+}
+.vertical-menu .container{
+    padding: 4rem 4rem;
+}
+.vertical-menu .container ul{
+    margin-top: 4rem;
+}
+.vertical-menu .container ul li a{
+    font-size: 1.8rem;
+    color: var(--second-color);
+    display: block;
+    padding: 2rem 0;
+}
+.verticla-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shadow-left{
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+.shadow-right{
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+@media(max-width:920px){
+    html{
+        font-size: 58%;
+    }
+    .navbar .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .navbar .menu{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .banner-left{
+       flex-wrap: wrap-reverse;
+    }
+}
